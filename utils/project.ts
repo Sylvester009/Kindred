@@ -1,4 +1,4 @@
-import { projects } from "@/app/data/project";
+import { projects } from "@/lib/data/seed";
 
 export function getMemberProjects(projectIds: string[]) {
   return projects.filter((project) =>

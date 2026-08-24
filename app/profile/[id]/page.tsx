@@ -1,6 +1,4 @@
-import { members } from "@/app/data/member";
-import { organizations } from "@/app/data/organization";
-import { skills } from "@/app/data/skill";
+import { members, organizations, skills } from "@/lib/data/seed";
 import { getMemberProjects } from "@/utils/project";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -44,12 +42,18 @@ export default async function Profile({
                 <div className="px-6 mt-auto">
                     <div className="p-4 rounded-lg bg-surface border border-outline-variant">
                         <p className="text-xs text-on-surface-variant mb-1">
-                            Member ID
+                            Member ID:
+                            <code className="text-sm font-medium text-secondary">
+                                {member.id}
+                            </code>
                         </p>
 
-                        <code className="text-sm font-medium text-primary">
-                            {member.id}
-                        </code>
+                        <p className="text-xs text-on-surface-variant mb-1">
+                            Connections:
+                            <code className="text-sm font-medium text-secondary">
+                                12
+                            </code>
+                        </p>
                     </div>
                 </div>
 

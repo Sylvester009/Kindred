@@ -1,5 +1,4 @@
-import { members } from "@/app/data/member";
-import { skills } from "@/app/data/skill";
+import { members, skills } from "@/lib/data/seed";
 
 export function getMemberSkills(memberId: string) {
   const member = members.find((member) => member.id === memberId);

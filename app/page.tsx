@@ -1,7 +1,6 @@
 import Link from "next/link";
-import { members } from "./data/member";
 import { getMemberSkills } from "@/utils/skill";
-import { organizations } from "./data/organization";
+import { members, organizations } from "@/lib/data/seed";
 
 export default function Dashboard() {
 
