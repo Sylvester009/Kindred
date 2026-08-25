@@ -48,12 +48,7 @@ export default async function Profile({
                             </code>
                         </p>
 
-                        <p className="text-xs text-on-surface-variant mb-1">
-                            Connections:
-                            <code className="text-sm font-medium text-secondary">
-                                12
-                            </code>
-                        </p>
+                        
                     </div>
                 </div>
 
