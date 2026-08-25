@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "db:setup": "node --env-file=.env.local --import=tsx scripts/setup.ts",
-    "db:seed": "node --env-file=.env.local --import=tsx scripts/seed.ts"
+    "db:seed": "node --env-file=.env.local --import=tsx scripts/seed.ts",
+    "test:network": "node --env-file=.env.local --import=tsx scripts/test-network.ts"
   },
   "dependencies": {
     "material-symbols": "^0.46.0",
