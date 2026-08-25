@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kindred
 
-## Getting Started
+Kindred is a graph-powered professional networking application that helps users discover people within their professional network and understand how they are connected.
 
-First, run the development server:
+Instead of treating professional connections as isolated records, Kindred models people, organizations, projects, and skills as interconnected entities in a graph.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The core feature allows a user to explore their network up to three degrees of separation and see the relationship path connecting them to another person.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Live Demo
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+https://kindred-orcin-nine.vercel.app/
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Repository
 
-## Learn More
+https://github.com/Sylvester009/Kindred
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Overview
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Professional relationships are naturally interconnected.
 
-## Deploy on Vercel
+A person may:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Work with another person
+- Work for an organization
+- Work on a project
+- Have particular skills
+- Share skills or professional relationships with other people
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+These relationships create a network rather than a simple list of users.
+
+Kindred uses this network structure to answer questions such as:
+
+> "Who is connected to me within three degrees of my professional network?"
+
+For example:
+
+```text
+You
+ │
+ └── Daniel
+       │
+       └── Chinedu
+             │
+             └── Sarah
